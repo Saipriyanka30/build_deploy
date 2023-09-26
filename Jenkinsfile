@@ -11,7 +11,9 @@ pipeline{
         }
         stage("mvn build"){
             steps{
-                sh "mnv clean package"
+                script{
+                    sh "mnv clean package"
+                }
             }
         }   
     }
