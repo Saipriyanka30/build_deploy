@@ -1,7 +1,7 @@
 pipeline{
     agent any
     Environment{
-        path="/apache-maven-3.9.4/bin:$path"
+        path = "/apache-maven-3.9.4/bin:$path"
     }
     stages{
         stage("Git Checkout"){
